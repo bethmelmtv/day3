@@ -13,3 +13,4 @@ export const people = [
         favorite_place: 'anywhere warm',
         hobbies: ['paddle boarding', 'baking', 'triathlons'],
     },
+];
