@@ -24,3 +24,12 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+
+Create a data.js file for our array of people (name,pronouns,favorite_place,hobbies )
+Template: gives us head and body, header, main and footer
+Header text, main elements (select & div)
+Options in select (with value)///(this is the value that goes in the dropdown )
+Elements in div(h4, p tag, span(pronouns),h6(hobbies title), ul(hobbies themselves)
+Grab dom elements in app.js and create eventlistener for the dropdown
+Create and implement function to render the appropriate person 
