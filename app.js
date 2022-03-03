@@ -26,5 +26,22 @@ console.log(pronouns);
 
 // set event listeners 
     // get user input
+selectElement.addEventListener('change', (e) => {
+    console.log('user click');
+});
     // use user input to update state 
+function renderPerson(index) {
+        //inside here will do something to the dom
+    divContainer.classList.add(`${people[index].name}`);
+    name.textContent = 'Name: ' + people[index].name;
+    pronouns.textContent = 'Pronouns: ' + people[index].pronouns;
+    favPlace.textContent = 'Favorite Place: ' + people[index].fav-place;
+
+    for (let hobby of people[index].hobbies) {
+        const li = document.createElement('li');
+        li.textContent = hobby;
+        hobbies.appendChild(li);
+    }
+}
+
     // update DOM to reflect the new state
